@@ -8,10 +8,11 @@ RUN cd /go/src/github.com/fatedier/frp \
  && mv bin/frps /frps \
  && mv conf/frpc.ini /frpc.ini \
  && mv conf/frps.ini /frps.ini \
- && make clean
+ && make clean \
+ && pwd
 
 WORKDIR /
 
-EXPOSE 80 443 6000 7000 7500
+EXPOSE 80 443 6000 7000 7500 8080
 
 ENTRYPOINT ["/frps"]
