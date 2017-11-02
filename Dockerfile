@@ -13,6 +13,6 @@ RUN cd /go/src/github.com/fatedier/frp \
 
 WORKDIR /
 
-EXPOSE 80 443 6000 7000 7500 8080
+EXPOSE 80 443 7000 7500 8090
 
 ENTRYPOINT ["/frps"]
